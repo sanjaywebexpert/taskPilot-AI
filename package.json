@@ -1,0 +1,28 @@
+{
+  "name": "taskmanamentai",
+  "version": "1.0.0",
+  "description": "This is task management with AI Project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test:evaluation": "node --test src/tests/api.evaluation.test.js",
+    "test:tools": "node --test src/tests/tool.evaluation.test.js"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openai/agents": "^0.21.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
